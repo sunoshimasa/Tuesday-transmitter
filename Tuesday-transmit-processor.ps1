@@ -18,6 +18,7 @@ foreach ($item in $CSV_FILES) {
 Move-Item -Path $USR_DL_FOLDER\$USR_NAME*.xlsx -Destination $USR_DESKTOP -Force
 $XLSX_FILES = Get-ChildItem $USR_DESKTOP\$USR_NAME*.xlsx -File
 foreach ($member in $XLSX_FILES) {
+    # remove file path from $member for partial filename string replacement
     $RENAMED_XLSX = ((Get-ChildItem $member -Name) -replace ($USR_NAME), ($CURRENT_DATE))
     #write-host "NEW FILE NAME:　" $RENAMED_XLSX
     Rename-Item -Path $member -NewName $RENAMED_XLSX
