@@ -1,4 +1,4 @@
-# on Tuesday transmit processor powershell script
+# on Tuesday transmit processor powershell script / File Converter
 $USR_NAME         = $env:USERNAME
 $USR_DL_FOLDER    = $env:USERPROFILE + "\Downloads"
 $USR_DESKTOP      = $env:USERPROFILE + "\Desktop"
