@@ -38,7 +38,7 @@ foreach ($item in $INSPECT_Xlsx) {
     } else {
         write-host no match...
     }
-# Releas COM Application Handle again
+# Releas COM Application Handle
 $XLSX_BOOK.close()
 $XLSX_HANDLE.Quit()
 write-host process finished
