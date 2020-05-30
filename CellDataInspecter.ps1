@@ -28,7 +28,7 @@ foreach ($item in $INSPECT_Xlsx) {
     write-host $CELL_VALUE" at "$INSPECT_COLUMN","$INSPECT_ROW 
     # check cell value at $INSPECT_COLUMN, $INSPECT_ROW
     if ($CELL_VALUE -eq $INSPECT_CellData) {
-        write-host ">>>>> "Specified Inspect condition match!!
+        write-host ">>>>> "Inspect condition matched!!
         # Change File Extensiton to xlsx
         # Change File Name to Another for Save
         $XLSX_CONV =  $USR_DESKTOP + "\" + $CURRENT_DATE + "-" + $CELL_VALUE+($item -replace ".csv","")
